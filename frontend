@@ -45,7 +45,6 @@ export default BackgroundImageWithText;
 .background-image {
   background-image: url('C:\Users\Lenovo\Pictures\aptitude2.jpg');
   background-size: cover;  
-  background-position: 
   height: 80vh; 
   width: 100%;  
 }
