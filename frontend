@@ -1,0 +1,95 @@
+import logo from './logo.svg';
+import './App.css';
+import BackgroundImageWithText from './Components/BackgroundImageWithText';
+
+
+
+import React from 'react';
+
+function App() {
+  const handleClick = () => {
+    alert("Button clicked!");
+  };
+
+  return (
+    <>
+                <div className="background-image">
+                  <BackgroundImageWithText/>
+
+
+               </div>
+      </>
+  );
+}
+
+export default App;
+
+const BackgroundImageWithText = ({onClick}) =>{
+    return(
+        <>
+        <div className="text-img">
+            <h1 className="text">Test Preperation that <br/>makes a difference </h1>
+            
+            <h5 className="para1">Prepare with us - Pass your test - Get the job<br/><br/> Try One of Your <span className="colored-word">FREE </span> 
+               aptitude tests</h5><br/>
+               <br/>
+
+            <button className="btn" onClick={onClick}>Start Free Test</button>
+
+</div>
+        </>
+    )
+}
+export default BackgroundImageWithText;
+
+.background-image {
+  background-image: url('C:\Users\Lenovo\Pictures\aptitude2.jpg');
+  background-size: cover;  
+  background-position: 
+  height: 80vh; 
+  width: 100%;  
+}
+.text-img{
+  position: absolute;
+  /* background-color: transparent; */
+  height: 60vh;
+  width: 100%;
+  display: flex;
+}
+.text{
+  /* position: absolute; */
+  margin-top: 150px;
+  margin-left: 40px;
+  color:rgb(8, 121, 8);
+  align-items: left;
+  float: left;
+}
+.para1{
+  position: absolute;
+  margin-top: 260px;
+  margin-left: 40px;
+
+  float: left;
+  align-items: left;
+
+
+}
+.colored-word{
+  color: rgba(255, 166, 0, 0.705);
+}
+.btn{
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 70px;
+background-color: orange;
+  height: 40px;
+  width: 150px;
+}
+.btn:hover {
+  background-color: #b7c3cf;
+}
+
+.btn:active {
+  background-color: #b1beca;
+}
+
